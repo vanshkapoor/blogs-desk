@@ -5,7 +5,7 @@ var ejs            = require('ejs');
 var methodoverride = require("method-override");
 var mongoose       = require('mongoose');
 
-mongoose.connect("mongodb://root:A1a2a3a4@ds233581.mlab.com:33581/mongoosetestvk",{ useNewUrlParser: true },function(err){
+mongoose.connect("mongodb://<dbname>:<pssd>@ds233581.mlab.com:33581/mongoosetestvk",{ useNewUrlParser: true },function(err){
 	if(err){
 		console.log(err);
 	}else{
